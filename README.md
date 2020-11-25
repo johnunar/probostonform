@@ -110,19 +110,19 @@ python
 export PROB_DEBUG="True"
 export PROB_SECRET_KEY="<Secret_key_from_step_4 >"
 ```
-7. Migrate
+5. Migrate
 ```shell script
 ./manage.py migrate
 ```
-8. Run tests
+6. Run tests
 ```shell script
 ./manage.py test
 ```
-9. Run the development server
+7. Run the development server
 ```shell script
 ./manage.py runserver
 ```
-10. If there is anything wrong, do not hesitate and contact me.
+8. If there is anything wrong, do not hesitate and contact me.
 
 <!-- CONTACT -->
 ## Contact
