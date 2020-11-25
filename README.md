@@ -107,8 +107,8 @@ python
 ```
 4. Set the environment variables
 ```shell script
-export DJANGO_DEBUG="True"
-export DJANGO_SECRET_KEY="<Secret_key_from_step_4 >"
+export PROB_DEBUG="True"
+export PROB_SECRET_KEY="<Secret_key_from_step_4 >"
 ```
 7. Migrate
 ```shell script
