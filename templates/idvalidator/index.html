@@ -1,0 +1,78 @@
+<html>
+<head>
+    <style>
+        @keyframes bgcolor {
+            0% {
+                background-color: #222222
+            }
+
+            30% {
+                background-color: #3D3F43
+            }
+
+            60% {
+                background-color: #556067
+            }
+
+            90% {
+                background-color: #6D8389
+            }
+
+            100% {
+                background-color: #556067
+            }
+        }
+
+        body {
+            -webkit-animation: bgcolor 20s infinite;
+            animation: bgcolor 10s infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+        }
+
+        .form-wrapper {
+            display: block;
+            box-sizing: border-box;
+            position: relative;
+            margin: 0 auto;
+            top: 30vh;
+            width: 300px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.75);
+        }
+
+        .errorlist {
+            color: red;
+            font-weight: bold;
+            list-style: none;
+            padding: 0;
+        }
+
+        input[type='submit'] {
+            display: block;
+            margin: 0 auto;
+            background-color: #6D8389;
+            color: white;
+            border: none;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="form-wrapper">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+
+</html>
