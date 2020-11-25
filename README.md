@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://applifting.cz/">
-    <img src="https://proboston.net/assets/images/fb-share.jpg" alt="Logo" width="150">
+  <a href="https://proboston.net/">
+    <img src="https://proboston.net/assets/images/fb-share.jpg" alt="Proboston logo" width="150">
   </a>
 
   <h3 align="center">Business ID form app</h3>
